@@ -177,6 +177,10 @@ $ ./build/release/ponyc examples/helloworld
 
 Please note that on 32-bit X86, using LLVM 3.7 or 3.8 on FreeBSD currently produces executables that don't run. Please use LLVM 3.6. 64-bit X86 does not have this problem, and works fine with LLVM 3.7 and 3.8.
 
+## Building on Fedora
+
+sudo dnf install llvm* gcc-c++ pcre2 zlib zilb-devel
+
 ## Building on Mac OS X
 [![Linux and OS X](https://travis-ci.org/ponylang/ponyc.svg?branch=master)](https://travis-ci.org/ponylang/ponyc)
 
