@@ -1,8 +1,12 @@
 """
 Example of the syntax used to pass structs in FFI calls.
 First, build the C file as a library, then build the Pony program.
-"""
 
+Make Shared Library
+gcc -c -Wall -Werror -fpic struct.c
+gcc -shared -o libffi-struct.so struct.o
+"""
+use "path:./"
 use "lib:ffi-struct"
 
 use @modify_via_outer[None](s: Outer)
